@@ -8,7 +8,7 @@ AFGXMLRequestOperation is an extension for [AFNetworking](http://github.com/AFNe
 ``` objective-c
 [apiClient registerHTTPOperationClass:[AFGXMLRequestOperation class]];
 [apiClient getPath:@"path/" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-    NSLog(@"response xml doc %@", responseObject");
+    NSLog(@"response xml doc %@", responseObject);
 } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
     NSLog(@"uh oh");
 }];
